@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Shopify — Desarrollo de Rubenooz</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							primary: "#6366f1",
+						}
+					}
+				}
+			}
+		</script>
+	</head>
+	<body class="bg-slate-950 text-slate-200 antialiased">
+		<!-- Navigation -->
+		<nav class="fixed top-0 z-50 w-full border-b border-white/10 bg-slate-950/80 backdrop-blur">
+			<div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+				<a href="#" class="font-semibold tracking-tight text-white">Inicio</a>
+				<div class="hidden gap-6 text-sm text-slate-400 md:flex">
+					<!--
+					<a href="#proyecto" class="transition hover:text-white">Proyecto</a>
+					-->
+					<a href="#sobre-mi" class="transition hover:text-white">Sobre mí</a>
+				</div>
+			</div>
+		</nav>
+		<!-- Hero -->
+		<!-- Project -->
+		<main id="proyecto">
+			<!-- About me -->
+			<section id="sobre-mi" class="border-y border-white/10 bg-slate-900/50 py-24">
+				<div class="mx-auto max-w-6xl px-6">
+					<div class="grid gap-12 md:grid-cols-[280px_1fr]">
+						<!-- Profile -->
+						<div>
+							<div class="flex h-48 w-48 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 text-5xl font-bold text-white relative overflow-hidden">
+								<img class="absolute left-0 top-0 w-full h-full" src="professional_profile_photo.jpeg">
+							</div>
+							<h2 class="mt-6 text-2xl font-bold text-white">Rubén Osorio</h2>
+							<p class="mt-2 text-slate-400">Software Engineer</p>
+						</div>
+						<!-- Bio -->
+						<div>
+							<p class="text-sm font-semibold uppercase tracking-widest text-indigo-400">
+								01 — Sobre mí
+							</p>
+							<h2 class="mt-3 text-3xl font-bold text-white">
+								¿Quién soy?
+							</h2>
+							<div class="mt-6 space-y-5 text-lg leading-8 text-slate-400">
+								<p><span class="text-white">Un profesional experimentado con casi una década de apasionada dedicación al mundo de la informática.</span> Mi trayectoria abarca la totalidad de la disciplina, <span class="text-white">desde sus fundamentos hasta el sinfín de posibilidades que ofrece para la innovación.</span> Aunque domino tanto el ensamblaje de equipos como el desarrollo de aplicaciones, <span class="text-white">mi interés principal se centra en la ciencia de datos y la ingeniería de software.</span> Respaldado por una mentalidad matemática, <span class="text-white">poseo la capacidad de trascender los límites convencionales y explorar ideas de formas únicas y poco ortodoxas.</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Education -->
+			<section id="educacion" class="py-24">
+				<div class="mx-auto max-w-4xl px-6">
+					<div class="text-center">
+						<p class="text-sm font-semibold uppercase tracking-widest text-indigo-400">02 — Educación</p>
+						<h2 class="mt-3 text-3xl font-bold text-white">Mi trayectoria académica</h2>
+					</div>
+					<div class="relative mt-16">
+						<!-- Timeline line -->
+						<div class="absolute left-2 top-0 h-full w-px bg-white/10 md:left-1/2"></div>
+						<!-- Item -->
+						<div class="relative mb-12 md:flex md:justify-between">
+							<div class="ml-8 md:ml-0 md:w-[45%] md:text-right">
+								<span class="text-sm text-indigo-400">Ene 2014 - Ene 2017</span>
+								<h3 class="mt-2 text-xl font-semibold text-white">Mecatrónica</h3>
+								<h6 class="mt-2 text-[10px] font-semibold text-white">Colegio de Estudios Científicos y Tecnológicos del Estado de México</h6>
+								<p class="mt-3 text-sm leading-6 text-slate-400">Estudié arquitectura computacional, circuitos digitales, desarrollo de sistemas, matemáticas, lógica y agentes inteligentes, enfocándome en principios computacionales e interacción.</p>
+							</div>
+							<div class="absolute left-0 top-1 h-5 w-5 rounded-full border-4 border-slate-950 bg-indigo-500 md:left-1/2 md:-translate-x-1/2"></div>
+						</div>
+						<!-- Item -->
+						<div class="relative mb-12 md:flex md:justify-end">
+							<div class="ml-8 md:w-[45%]">
+								<span class="text-sm text-indigo-400">Ene 2017 - Ene 2021</span>
+								<h3 class="mt-2 text-xl font-semibold text-white">Matemáticas Aplicadas y Computación</h3>
+								<h6 class="mt-2 text-[10px] font-semibold text-white">Universidad Nacional Autónoma de México</h6>
+								<p class="mt-3 text-sm leading-6 text-slate-400">Exploré ciencia de datos, ingeniería de software, ciberseguridad, bases de datos y algoritmos, aplicando matemáticas para comprender y resolver problemas computacionales.</p>
+							</div>
+							<div class="absolute left-0 top-1 h-5 w-5 rounded-full border-4 border-slate-950 bg-indigo-500 md:left-1/2 md:-translate-x-1/2"></div>
+						</div>
+						<!-- Item -->
+						<div class="relative md:flex md:justify-between">
+							<div class="ml-8 md:ml-0 md:w-[45%] md:text-right">
+								<span class="text-sm text-indigo-400">Jun 2023 - Ene 2024</span>
+								<h3 class="mt-2 text-xl font-semibold text-white">Ciencia de Datos</h3>
+								<h6 class="mt-2 text-[10px] font-semibold text-white">Universidad Nacional Autónoma de México</h6>
+								<p class="mt-3 text-sm leading-6 text-slate-400">Desarrollé modelos avanzados de inteligencia artificial aplicando fundamentos matemáticos, transformando conocimientos teóricos en soluciones prácticas y preparándome para investigación.</p>
+							</div>
+							<div class="absolute left-0 top-1 h-5 w-5 rounded-full border-4 border-slate-950 bg-indigo-500 md:left-1/2 md:-translate-x-1/2"></div>
+						</div>
+					</div>
+					<div class="relative mt-16">
+						<p class="text-center text-sm leading-6 text-white">Una selección de mi trayectoria académica. Para conocer mi educación y proyectos en mayor detalle, visita mi perfil de <a class="text-indigo-400" href="https://www.linkedin.com/in/rubenooz">LinkedIn</a>.</p>
+					</div>
+				</div>
+			</section>
+			<!-- Professional Career -->
+			<section id="carrera-profesional" class="border-y border-white/10 bg-slate-900/50 py-24">
+				<div class="mx-auto max-w-4xl px-6">
+					<div class="text-center">
+						<p class="text-sm font-semibold uppercase tracking-widest text-indigo-400">03 — Trayectoria</p>
+						<h2 class="mt-3 text-3xl font-bold text-white">Mi trayectoria profesional</h2>
+					</div>
+					<div class="relative mt-16">
+						<!-- Timeline line -->
+						<div class="absolute left-2 top-0 h-full w-px bg-white/10 md:left-1/2"></div>
+						<!-- Item -->
+						<div class="relative mb-12 md:flex md:justify-between">
+							<div class="ml-8 md:ml-0 md:w-[45%] md:text-right">
+								<span class="text-sm text-indigo-400">Ago 2017 - Ago 2019</span>
+								<h3 class="mt-2 text-xl font-semibold text-white">Full-stack Developer</h3>
+								<h6 class="mt-2 text-[10px] font-semibold text-white">Workana</h6>
+								<p class="mt-3 text-sm leading-6 text-slate-400">Colaboré con clientes globales desarrollando soluciones e-commerce en Shopify y WooCommerce, optimizando procesos, reduciendo costos y mejorando resultados empresariales.</p>
+							</div>
+							<div class="absolute left-0 top-1 h-5 w-5 rounded-full border-4 border-slate-950 bg-indigo-500 md:left-1/2 md:-translate-x-1/2"></div>
+						</div>
+						<!-- Item -->
+						<div class="relative mb-12 md:flex md:justify-end">
+							<div class="ml-8 md:w-[45%]">
+								<span class="text-sm text-indigo-400">Ene 2021 - Jun 2021</span>
+								<h3 class="mt-2 text-xl font-semibold text-white">Full-stack Developer</h3>
+								<h6 class="mt-2 text-[10px] font-semibold text-white">Panorama</h6>
+								<p class="mt-3 text-sm leading-6 text-slate-400">Desarrollé soluciones Full-Stack utilizando tecnologías modernas y Webflow, resolviendo desafíos complejos y participando en proyectos e-commerce nacionales e internacionales.</p>
+							</div>
+							<div class="absolute left-0 top-1 h-5 w-5 rounded-full border-4 border-slate-950 bg-indigo-500 md:left-1/2 md:-translate-x-1/2"></div>
+						</div>
+						<!-- Item -->
+						<div class="relative md:flex md:justify-between">
+							<div class="ml-8 md:ml-0 md:w-[45%] md:text-right">
+								<span class="text-sm text-indigo-400">Jun 2021 - Nov 2021</span>
+								<h3 class="mt-2 text-xl font-semibold text-white">Software Engineer & Shopify Expert</h3>
+								<h6 class="mt-2 text-[10px] font-semibold text-white">Smart Bamboo</h6>
+								<p class="mt-3 text-sm leading-6 text-slate-400">Desarrollé soluciones de software y e-commerce con Shopify y Front-End, optimizando experiencias, atrayendo clientes y participando en proyectos globales.</p>
+							</div>
+							<div class="absolute left-0 top-1 h-5 w-5 rounded-full border-4 border-slate-950 bg-indigo-500 md:left-1/2 md:-translate-x-1/2"></div>
+						</div>
+						<!-- Item -->
+						<div class="relative mb-12 md:flex md:justify-end">
+							<div class="ml-8 md:w-[45%]">
+								<span class="text-sm text-indigo-400">Nov 2021</span>
+								<h3 class="mt-2 text-xl font-semibold text-white">Senior Software Engineer & Shopify Expert</h3>
+								<h6 class="mt-2 text-[10px] font-semibold text-white">Applab</h6>
+								<p class="mt-3 text-sm leading-6 text-slate-400">Lideré proyectos tecnológicos globales y nacionales como Senior Software Engineer y Shopify Expert, tomando decisiones estratégicas y desarrollando soluciones integrales.</p>
+							</div>
+							<div class="absolute left-0 top-1 h-5 w-5 rounded-full border-4 border-slate-950 bg-indigo-500 md:left-1/2 md:-translate-x-1/2"></div>
+						</div>
+					</div>
+					<div class="relative mt-16">
+						<p class="text-center text-sm leading-6 text-white">Una selección de mi trayectoria profesional. Para conocer mi experiencia y proyectos en mayor detalle, visita mi perfil de <a class="text-indigo-400" href="https://www.linkedin.com/in/rubenooz">LinkedIn</a>.</p>
+					</div>
+				</div>
+			</section>
+			<!-- Technical specialties -->
+						<section id="especialidades-tecnicas" class="py-24">
+				<div class="mx-auto max-w-6xl px-6">
+					<div class="grid gap-14 lg:grid-cols-2 lg:items-start relative">
+						<div class="sticky top-20 text-left">
+							<p class="text-sm font-semibold uppercase tracking-widest text-indigo-400">04 — Tecnologías para destacar en este rol</p>
+							<h2 class="mt-3 text-3xl font-bold tracking-tight text-white md:text-4xl">Tecnologías complejas para desarrollar, extender y personalizar soluciones digitales</h2>
+							<p class="mt-6 text-lg leading-8 text-slate-400">Experiencia trabajando con APIs, aplicaciones, extensiones, componentes y herramientas de desarrollo para crear soluciones digitales flexibles, escalables y adaptadas a cada necesidad.</p>
+						</div>
+						<div class="space-y-3">
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Shopify & Shopify Plus</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Liquid</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Shopify Custom App Development</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Public/Private/Custom Shopify Apps</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Shopify Admin API</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Shopify Storefront API</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Shopify App Bridge</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Shopify Polaris</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Theme App Extensions</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">App Blocks</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Checkout UI Extensions</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Shopify Functions</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Web Pixel Extensions</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Shopify Webhooks</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Shopify Partner Dashboard</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Shopify CLI v3+</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Shopify App Templates</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Metafields</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Metaobjects</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Shopify Flow</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="tecnologias-para-destacar-en-este-rol" class="border-y border-white/10 bg-slate-900/50 py-24">
+				<div class="mx-auto max-w-6xl px-6">
+					<div class="grid gap-14 lg:grid-cols-2 lg:items-start relative">
+						<div class="space-y-3">
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">E-commerce Development</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">API Integrations</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">GraphQL APIs</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">REST APIs</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">JavaScript / TypeScript</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">React / Remix</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">React / Next.js</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">HMAC Verification</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Secure Session Management</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">OAuth 2.0</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">DevOps</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">CI/CD</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">ERP/CRM Integrations</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Logistics Platforms</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Payment Platforms</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Marketing Platforms</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Automated Testing</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Scalable Application Design</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Front-End Architecture</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Vitest</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Marketing Integrations</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Payment Integrations</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Logistics Integrations</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Joomla</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">API Versioning</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Code Reviews</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Access Tokens</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">WordPress</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">PHP</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Jest</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Playwright</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Angular</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">HTML5</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">CSS</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">jQuery</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">Git</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">ESLint</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">OWASP</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">ERP</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+							<div class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-5 py-4">
+								<span class="text-slate-300">CRM</span>
+								<span class="hidden text-xs text-slate-500">Connected shops</span>
+							</div>
+						</div>
+						<div class="sticky top-20 text-right">
+							<p class="text-sm font-semibold uppercase tracking-widest text-indigo-400">05 — Capacidades Complementarias</p>
+							<h2 class="mt-3 text-3xl font-bold tracking-tight text-white md:text-4xl">Herramientas que potencian mi desempeño profesional</h2>
+							<p class="mt-6 text-lg leading-8 text-slate-400">Conocimiento de plataformas empresariales y herramientas especializadas para integrar operaciones, centralizar información y optimizar procesos dentro de ecosistemas digitales.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="border-t border-white/10 py-24">
+				<div class="mx-auto max-w-6xl px-6">
+					<div class="text-center">
+						<p class="text-sm font-semibold uppercase tracking-widest text-indigo-400">06 — Capacidades Multidisciplinarias</p>
+						<h2 class="mt-4 text-4xl font-bold tracking-tight text-white md:text-5xl">Conocimientos, herramientas y prácticas que forman parte de mi stack profesional</h2>
+						<p class="mx-auto mt-6 max-w-5xl text-lg leading-8 text-slate-400">Especializado en ingeniería de software, desarrollo de sistemas, comercio electrónico, inteligencia artificial, análisis de datos, automatización y arquitecturas tecnológicas orientadas a resultados.</p>
+					</div>
+					<div class="flex flex-wrap gap-3 mx-auto mt-12 max-w-4xl justify-center">
+						<span class="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-300">Docker</span>
+						<span class="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-300">Databases</span>
+						<span class="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-300">Data Mining</span>
+						<span class="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-300">Data Modeling</span>
+						<span class="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-300">Machine Learning</span>
+						<span class="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-300">Deep Learning</span>
+						<span class="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-300">Data Analysis</span>
+						<span class="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-300">Business Intelligence</span>
+						<span class="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-300">Data Intelligence</span>
+						<span class="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-300">Data Science</span>
+						<span class="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-300">LLMs</span>
+						<span class="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-300">AI Agents</span>
+						<span class="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-300">Prompt Engineering</span>
+						<span class="rounded-full bg-white/5 px-4 py-2 text-sm text-slate-300">RAG</span>
+					</div>
+					<div class="text-center">
+						<p class="mx-auto mt-6 max-w-2xl text-sm leading-6 text-white">Python - Software Documentation - End-to-End Project Ownership - Storefront Development - Continuous Learning - Vue / Nuxt.js - React Native - WooCommerce - SQL / MySQL - Attention to Detail - Proactive Problem Solving - Tailwind CSS - Bootstrap - MongoDB - Node.js - Google Cloud Platform (GCP) - Amazon Web Services (AWS) - Squarespace - Webflow - Service-Oriented Mindse - Ollama - Requirements Analysis - Business-Oriented Problem Solving - Java - Firebase - Pandas - n8n - Scikit-Learn - WebSocket - TensorFlow  - Local LLMs</p>
+					</div>
+				</div>
+			</section>
+			<!--
+			<section class="border-y border-white/10 bg-slate-900/50 py-24">
+				<div class="mx-auto max-w-6xl px-6">
+					<div class="grid gap-14 lg:grid-cols-[0.8fr_1.2fr]">
+						<div>
+							<p class="text-sm font-semibold uppercase tracking-widest text-indigo-400">
+								06 — Core Principles
+							</p>
+							<h2 class="mt-3 text-3xl font-bold tracking-tight text-white md:text-4xl">
+								Principios que guían el sistema
+							</h2>
+							<p class="mt-6 text-lg leading-8 text-slate-400">
+								Decisiones técnicas orientadas a mantener una plataforma simple,
+								predecible y preparada para evolucionar.
+							</p>
+						</div>
+						<div class="divide-y divide-white/10">
+							<div class="flex items-center justify-between py-5">
+								<span class="text-lg text-white">Simple by default</span>
+								<span class="text-xs text-slate-600">01</span>
+							</div>
+							<div class="flex items-center justify-between py-5">
+								<span class="text-lg text-white">Explicit over implicit</span>
+								<span class="text-xs text-slate-600">02</span>
+							</div>
+							<div class="flex items-center justify-between py-5">
+								<span class="text-lg text-white">Small focused modules</span>
+								<span class="text-xs text-slate-600">03</span>
+							</div>
+							<div class="flex items-center justify-between py-5">
+								<span class="text-lg text-white">Predictable behavior</span>
+								<span class="text-xs text-slate-600">04</span>
+							</div>
+							<div class="flex items-center justify-between py-5">
+								<span class="text-lg text-white">Controlled complexity</span>
+								<span class="text-xs text-slate-600">05</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			-->
+			<section class="border-y border-white/10 bg-slate-900/50 py-24">
+				<div class="mx-auto max-w-6xl px-6">
+					<div class="max-w-2xl">
+						<p class="text-sm font-semibold uppercase tracking-widest text-indigo-400">07 — Proyectos</p>
+						<h2 class="mt-3 text-3xl font-bold text-white">Proyectos</h2>
+					</div>
+					<div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+						<div class="rounded-xl border border-white/10 p-6">
+							<h3 class="font-semibold text-white">Plataforma en USA</h3>
+							<p class="mt-3 text-sm leading-6 text-slate-400">Plataforma desarrollada para el mercado estadounidense, con integración personalizada de una pasarela de pago y generación automatizada de PDFs personalizados para cada cliente. Posteriormente, el proyecto evolucionó hacia una implementación basada en WordPress y WooCommerce.</p>
+						</div>
+						<div class="rounded-xl border border-white/10 p-6">
+							<h3 class="font-semibold text-white">Central en casa</h3>
+							<p class="mt-3 text-sm leading-6 text-slate-400">E-commerce headless desarrollado desde cero, con un frontend construido en Next.js y Shopify como backend y plataforma de gestión comercial. La solución fue desplegada y alojada en AWS, cubriendo de forma integral el desarrollo y la implementación del proyecto.</p>
+						</div>
+						<div class="rounded-xl border border-white/10 p-6">
+							<h3 class="font-semibold text-white">Deliver Mexico</h3>
+							<p class="mt-3 text-sm leading-6 text-slate-400">Plataforma de logística de última milla desarrollada con Next.js, diseñada para integrarse fácilmente con negocios que utilizan Shopify y requieren soluciones de entrega. Incluye una API basada en GraphQL para gestionar la comunicación e integración entre las diferentes plataformas y servicios.</p>
+						</div>
+						<div class="rounded-xl border border-white/10 p-6">
+							<h3 class="font-semibold text-white">Banorte AFORE XXI</h3>
+							<p class="mt-3 text-sm leading-6 text-slate-400">Plataforma personalizable desarrollada principalmente con PHP y jQuery, diseñada para adaptarse a diferentes necesidades y contenidos. Posteriormente, el proyecto evolucionó hacia una arquitectura basada en WordPress como backend para facilitar su administración y mantenimiento.</p>
+						</div>
+						<div class="rounded-xl border border-white/10 p-6">
+							<h3 class="font-semibold text-white">Smart Bamboo</h3>
+							<p class="mt-3 text-sm leading-6 text-slate-400">Implementación de soluciones tecnológicas para una tienda Shopify Plus, incluyendo el desarrollo de APIs para facilitar el acceso y análisis de datos por parte del equipo de Data Science. Se desarrollaron experiencias personalizadas para los usuarios, optimizaciones avanzadas del tema y aplicaciones custom para ampliar las funcionalidades de la plataforma.</p>
+						</div>
+						<div class="rounded-xl border border-white/10 p-6">
+							<h3 class="font-semibold text-white">Palmers</h3>
+							<p class="mt-3 text-sm leading-6 text-slate-400">Desarrollo y mantenimiento de la tienda Shopify, implementando estrategias de personalización y marketing basadas en datos. Se desarrollaron descuentos inteligentes, recomendaciones de regalos según el historial de compra, predicción de próximas compras, segmentaciones avanzadas, flows personalizados y un sistema de loyalty adaptado al comportamiento de cada cliente.</p>
+						</div>
+						<div class="rounded-xl border border-white/10 p-6">
+							<h3 class="font-semibold text-white">CreamRight</h3>
+							<p class="mt-3 text-sm leading-6 text-slate-400">Desarrollo de experiencias Shopify desde cero con Liquid, creación de apps para extender funcionalidades clave, personalización del checkout y desarrollo de Theme App Extensions. También se implementaron mejoras y funcionalidades avanzadas para potenciar las capacidades B2B de la plataforma.</p>
+						</div>
+						<div class="rounded-xl border border-white/10 p-6">
+							<h3 class="font-semibold text-white">Shopify LLM</h3>
+							<p class="mt-3 text-sm leading-6 text-slate-400">Integración de Shopify con diferentes LLMs para analizar e interpretar el catálogo, generando títulos, descripciones, tags y atributos optimizados. También se utilizan para detectar productos relacionados, oportunidades de cross-selling, crear recomendaciones y generar estrategias de merchandising basadas en los datos de la tienda.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- What I bring -->
+			<section class="border-y border-white/10 bg-slate-900/50 py-24">
+				<div class="mx-auto max-w-6xl px-6">
+					<div class="max-w-2xl">
+						<p class="text-sm font-semibold uppercase tracking-widest text-indigo-400">08 — Lo que aporto</p>
+						<h2 class="mt-3 text-3xl font-bold text-white">Más allá del código</h2>
+					</div>
+					<div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+						<div class="rounded-xl border border-white/10 p-6">
+							<h3 class="font-semibold text-white">Empatía activa</h3>
+							<p class="mt-3 text-sm leading-6 text-slate-400">Escucho y comprendo las necesidades de los demás, buscando generar relaciones basadas en la confianza, el respeto y una comunicación efectiva.</p>
+						</div>
+						<div class="rounded-xl border border-white/10 p-6">
+							<h3 class="font-semibold text-white">Proactividad y anticipación</h3>
+							<p class="mt-3 text-sm leading-6 text-slate-400">Me adelanto a las necesidades y posibles desafíos, tomando iniciativa y buscando soluciones antes de que los problemas se presenten.</p>
+						</div>
+						<div class="rounded-xl border border-white/10 p-6">
+							<h3 class="font-semibold text-white">Responsabilidad</h3>
+							<p class="mt-3 text-sm leading-6 text-slate-400">Asumo el compromiso con mis tareas y objetivos, procurando cumplir con calidad, puntualidad y constancia.</p>
+						</div>
+						<div class="rounded-xl border border-white/10 p-6">
+							<h3 class="font-semibold text-white">Honestidad</h3>
+							<p class="mt-3 text-sm leading-6 text-slate-400">Actúo con transparencia e integridad, comunicando las situaciones de manera clara y manteniendo la confianza en cada relación profesional.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Closing -->
+			<section id="contacto" class="border-t border-white/10 py-24">
+				<div class="mx-auto max-w-3xl px-6 text-center">
+					<p class="text-sm font-semibold uppercase tracking-widest text-indigo-400">
+						09 — Gracias
+					</p>
+					<h2 class="mt-4 text-4xl font-bold tracking-tight text-white md:text-5xl">Construyamos algo juntos.</h2>
+					<!--
+						<p class="mx-auto mt-6 max-w-xl leading-7 text-slate-400">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Sed posuere consectetur est at lobortis.
+						</p>
+					-->
+				</div>
+			</section>
+		</main>
+		<!-- Footer -->
+		<footer class="border-y border-white/10 bg-slate-900/50 py-8">
+			<div class="mx-auto flex max-w-6xl flex-col justify-between gap-4 px-6 text-sm text-slate-500 md:flex-row">
+				<a href="https://www.linkedin.com/in/rubenooz" class="hover:text-white">Rubenooz</a>
+				<div class="flex gap-5">
+					<a href="https://github.com/rubenooz" class="hover:text-white">GitHub</a>
+					<a href="https://www.linkedin.com/in/rubenooz" class="hover:text-white">LinkedIn</a>
+					<a href="https://rubenooz.github.io" class="hover:text-white">Portfolio</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
